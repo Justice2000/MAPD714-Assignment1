@@ -84,7 +84,7 @@
                                                     <attributedString key="attributedTitle">
                                                         <fragment content="⌫">
                                                             <attributes>
-                                                                <font key="NSFont" size="36" name=".SFNS-Regular"/>
+                                                                <font key="NSFont" metaFont="system" size="36"/>
                                                                 <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                                             </attributes>
                                                         </fragment>
@@ -646,7 +646,7 @@
             <size key="intrinsicContentSize" width="44.333333333333336" height="56"/>
         </designable>
         <designable name="ElN-p4-Bib">
-            <size key="intrinsicContentSize" width="46" height="54"/>
+            <size key="intrinsicContentSize" width="61" height="57"/>
         </designable>
         <designable name="KAx-R9-FEO">
             <size key="intrinsicContentSize" width="45.666666666666664" height="56"/>
