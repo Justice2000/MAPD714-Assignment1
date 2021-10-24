@@ -32,6 +32,7 @@ class ViewController: UIViewController
 {
 
     @IBOutlet weak var outputLabel: UILabel!
+    @IBOutlet weak var outputLabel2: UILabel!
     
     //initializing the various parts of the operation
     var runningNumber = ""
@@ -47,6 +48,7 @@ class ViewController: UIViewController
         
         //setting default value of Display text
         outputLabel.text = "0"
+        outputLabel2.text = "0"
         
         
     }
@@ -59,6 +61,7 @@ class ViewController: UIViewController
             //takes the assingned tag on each nuber and stores in runningnumber
             runningNumber += "\(sender.tag)"
             outputLabel.text = runningNumber
+            outputLabel2.text = runningNumber
         }
     }
     
@@ -71,6 +74,7 @@ class ViewController: UIViewController
         result = ""
         currentOperation = .NULL
         outputLabel.text = "0"
+        outputLabel2.text = "0"
     }
     
     //defines funtion for back button pressed
@@ -78,9 +82,11 @@ class ViewController: UIViewController
     {
         runningNumber = String(runningNumber.dropLast())
         outputLabel.text = runningNumber
+        outputLabel2.text = runningNumber
         if runningNumber.isEmpty
         {
             outputLabel.text = "0"
+            outputLabel2.text = "0"
         }
     }
     
@@ -92,6 +98,7 @@ class ViewController: UIViewController
         {
             runningNumber += "."
             outputLabel.text = runningNumber
+            outputLabel2.text = runningNumber
         }
     }
     
@@ -170,6 +177,7 @@ class ViewController: UIViewController
                     result = "\(Int(Double(result)!))"
                 }
                 outputLabel.text = result
+                outputLabel2.text = result
             }
             currentOperation = operation
             
