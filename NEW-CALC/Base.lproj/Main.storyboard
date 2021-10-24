@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina6_7" orientation="portrait" appearance="light"/>
+    <device id="retina6_7" orientation="landscape" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -12,9 +12,1315 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="NEW_CALC" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
+                        <rect key="frame" x="0.0" y="0.0" width="926" height="428"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZCE-R0-vpH" customClass="roundButton" customModule="NEW_CALC" customModuleProvider="target">
+                                <rect key="frame" x="816" y="183" width="50" height="50"/>
+                                <color key="backgroundColor" red="0.7725490196" green="0.1333333333" blue="0.20000000000000001" alpha="0.84705882349999995" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="9JD-hO-M7l"/>
+                                    <constraint firstAttribute="width" constant="80" id="xej-BK-vQg"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="C">
+                                            <attributes>
+                                                <font key="NSFont" size="26" name="ProductSans-Regular"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                    <color key="baseForegroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </buttonConfiguration>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="RoundButton" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="allClearPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lNp-oy-yCv"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="784-iJ-dgu" customClass="roundButton" customModule="NEW_CALC" customModuleProvider="target">
+                                <rect key="frame" x="816" y="241" width="50" height="50"/>
+                                <color key="backgroundColor" red="0.7725490196" green="0.1333333333" blue="0.20000000000000001" alpha="0.84705882349999995" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="80" id="Fmb-yt-3Lj"/>
+                                    <constraint firstAttribute="height" constant="80" id="at6-dl-Wak"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="⌫">
+                                            <attributes>
+                                                <font key="NSFont" size="26" name=".SFNS-Regular"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                    <color key="baseForegroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </buttonConfiguration>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="RoundButton" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="clearPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="e5d-Xt-2Pi"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zhe-ra-jaA" customClass="roundButton" customModule="NEW_CALC" customModuleProvider="target">
+                                <rect key="frame" x="816" y="299" width="50" height="50"/>
+                                <color key="backgroundColor" red="0.1529411765" green="0.16078431369999999" blue="0.1960784314" alpha="0.84705882349999995" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="ddF-Pw-kJq"/>
+                                    <constraint firstAttribute="width" constant="80" id="faL-5d-ZzB"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="±">
+                                            <attributes>
+                                                <font key="NSFont" size="26" name="ProductSans-Regular"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                    <color key="baseForegroundColor" red="0.0078431372550000003" green="0.76470588240000004" blue="0.60392156860000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </buttonConfiguration>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="RoundButton" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="pmPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3nb-cS-JL8"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TYC-Km-Cvu" customClass="roundButton" customModule="NEW_CALC" customModuleProvider="target">
+                                <rect key="frame" x="758" y="182" width="50" height="50"/>
+                                <color key="backgroundColor" red="0.1529411765" green="0.16078431369999999" blue="0.1960784314" alpha="0.84705882349999995" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="67L-x2-vHT"/>
+                                    <constraint firstAttribute="width" constant="80" id="p60-m9-5wQ"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="×">
+                                            <attributes>
+                                                <font key="NSFont" size="26" name="ProductSans-Regular"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                    <color key="baseForegroundColor" red="0.0078431372550000003" green="0.76470588240000004" blue="0.60392156860000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </buttonConfiguration>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="RoundButton" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="multiplyPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xJW-8v-VCl"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CfA-Do-a7w" customClass="roundButton" customModule="NEW_CALC" customModuleProvider="target">
+                                <rect key="frame" x="700" y="182" width="50" height="50"/>
+                                <color key="backgroundColor" red="0.1529411765" green="0.16078431369999999" blue="0.1960784314" alpha="0.84705882349999995" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="80" id="W9Z-m1-wEW"/>
+                                    <constraint firstAttribute="height" constant="80" id="hyN-5G-8XF"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="-">
+                                            <attributes>
+                                                <font key="NSFont" size="26" name="ProductSans-Regular"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                    <color key="baseForegroundColor" red="0.0078431372550000003" green="0.76470588240000004" blue="0.60392156860000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </buttonConfiguration>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="RoundButton" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="subtractPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0yD-D8-ou2"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oV9-rM-0kC" customClass="roundButton" customModule="NEW_CALC" customModuleProvider="target">
+                                <rect key="frame" x="758" y="241" width="50" height="50"/>
+                                <color key="backgroundColor" red="0.1529411765" green="0.16078431369999999" blue="0.1960784314" alpha="0.84705882349999995" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="HYh-iW-SHV"/>
+                                    <constraint firstAttribute="width" constant="80" id="Kyl-DC-hUb"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="%">
+                                            <attributes>
+                                                <font key="NSFont" size="26" name="ProductSans-Regular"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                    <color key="baseForegroundColor" red="0.0078431372550000003" green="0.76470588240000004" blue="0.60392156860000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </buttonConfiguration>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="RoundButton" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="percentPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fpj-tR-tVI"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gA5-Oa-i6f" customClass="roundButton" customModule="NEW_CALC" customModuleProvider="target">
+                                <rect key="frame" x="700" y="241" width="50" height="50"/>
+                                <color key="backgroundColor" red="0.1529411765" green="0.16078431369999999" blue="0.1960784314" alpha="0.84705882349999995" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="80" id="59I-Wl-87R"/>
+                                    <constraint firstAttribute="height" constant="80" id="x7J-Ox-oAs"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="+">
+                                            <attributes>
+                                                <font key="NSFont" size="26" name="ProductSans-Regular"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                    <color key="baseForegroundColor" red="0.0078431372550000003" green="0.76470588240000004" blue="0.60392156860000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </buttonConfiguration>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="RoundButton" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="addPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Vky-xr-5r9"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CjG-rO-xRw" customClass="roundButton" customModule="NEW_CALC" customModuleProvider="target">
+                                <rect key="frame" x="758" y="299" width="50" height="50"/>
+                                <color key="backgroundColor" red="0.1529411765" green="0.16078431369999999" blue="0.1960784314" alpha="0.84705882349999995" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="7Oq-dX-TPM"/>
+                                    <constraint firstAttribute="width" constant="80" id="HMZ-y0-FgK"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="÷">
+                                            <attributes>
+                                                <font key="NSFont" size="26" name="ProductSans-Regular"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                    <color key="baseForegroundColor" red="0.0078431372550000003" green="0.76470588240000004" blue="0.60392156860000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </buttonConfiguration>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="RoundButton" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="dividePressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="yax-tI-smJ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="4" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G3m-No-Nak" customClass="roundButton" customModule="NEW_CALC" customModuleProvider="target">
+                                <rect key="frame" x="526" y="241" width="50" height="50"/>
+                                <color key="backgroundColor" red="0.1529411765" green="0.16078431369999999" blue="0.1960784314" alpha="0.84705882349999995" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="eDW-AT-zhJ"/>
+                                    <constraint firstAttribute="width" constant="80" id="t8C-2U-Dv3"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="4">
+                                            <attributes>
+                                                <font key="NSFont" size="26" name="ProductSans-Regular"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                    <color key="baseForegroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </buttonConfiguration>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="RoundButton" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="numberPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wDi-vw-EBm"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eWL-kJ-9iW" customClass="roundButton" customModule="NEW_CALC" customModuleProvider="target">
+                                <rect key="frame" x="758" y="357" width="108" height="50"/>
+                                <color key="backgroundColor" red="0.0078431372550000003" green="0.76470588240000004" blue="0.60392156860000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="UaH-tp-PL6"/>
+                                    <constraint firstAttribute="width" constant="80" id="WYb-wA-6Za"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="=">
+                                            <attributes>
+                                                <font key="NSFont" size="26" name="ProductSans-Regular"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                    <color key="baseForegroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </buttonConfiguration>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="RoundButton" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="equalPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="j4s-qB-32K"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CKw-P6-ftI" customClass="roundButton" customModule="NEW_CALC" customModuleProvider="target">
+                                <rect key="frame" x="642" y="357" width="50" height="50"/>
+                                <color key="backgroundColor" red="0.1529411765" green="0.16078431369999999" blue="0.1960784314" alpha="0.84705882349999995" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="80" id="2Gs-Fu-Drh"/>
+                                    <constraint firstAttribute="height" constant="80" id="kf9-7B-C4z"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content=".">
+                                            <attributes>
+                                                <font key="NSFont" size="26" name="ProductSans-Regular"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                    <color key="baseForegroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </buttonConfiguration>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="RoundButton" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="dotPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hIV-4P-UK0"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6G4-GH-O3v" customClass="roundButton" customModule="NEW_CALC" customModuleProvider="target">
+                                <rect key="frame" x="700" y="357" width="50" height="50"/>
+                                <color key="backgroundColor" red="0.1529411765" green="0.16078431369999999" blue="0.1960784314" alpha="0.84705882349999995" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="80" id="e9f-g6-zl0"/>
+                                    <constraint firstAttribute="height" constant="80" id="sO2-Rj-bGz"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="m-">
+                                            <attributes>
+                                                <font key="NSFont" size="15" name="ProductSans-Regular"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                    <color key="baseForegroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </buttonConfiguration>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="RoundButton" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H4j-cP-4uH" customClass="roundButton" customModule="NEW_CALC" customModuleProvider="target">
+                                <rect key="frame" x="700" y="299" width="50" height="50"/>
+                                <color key="backgroundColor" red="0.1529411765" green="0.16078431369999999" blue="0.1960784314" alpha="0.84705882349999995" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="O8Q-yU-0Hm"/>
+                                    <constraint firstAttribute="width" constant="80" id="ZSk-ni-pS6"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="m+">
+                                            <attributes>
+                                                <font key="NSFont" size="15" name="ProductSans-Regular"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                    <color key="baseForegroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </buttonConfiguration>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="RoundButton" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7eY-Oa-huu" customClass="roundButton" customModule="NEW_CALC" customModuleProvider="target">
+                                <rect key="frame" x="467" y="357" width="50" height="50"/>
+                                <color key="backgroundColor" red="0.1529411765" green="0.16078431369999999" blue="0.1960784314" alpha="0.84705882349999995" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="3SK-ak-JSE"/>
+                                    <constraint firstAttribute="width" constant="80" id="FGu-CK-8Gd"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="mr">
+                                            <attributes>
+                                                <font key="NSFont" size="15" name="ProductSans-Regular"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                    <color key="baseForegroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </buttonConfiguration>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="RoundButton" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qsO-9a-wEt" customClass="roundButton" customModule="NEW_CALC" customModuleProvider="target">
+                                <rect key="frame" x="467" y="299" width="50" height="50"/>
+                                <color key="backgroundColor" red="0.1529411765" green="0.16078431369999999" blue="0.1960784314" alpha="0.84705882349999995" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="28G-8S-hJ4"/>
+                                    <constraint firstAttribute="width" constant="80" id="Kcp-zn-q6P"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="mc">
+                                            <attributes>
+                                                <font key="NSFont" size="15" name="ProductSans-Regular"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                    <color key="baseForegroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </buttonConfiguration>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="RoundButton" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zfr-qv-v4v" customClass="roundButton" customModule="NEW_CALC" customModuleProvider="target">
+                                <rect key="frame" x="466" y="241" width="50" height="50"/>
+                                <color key="backgroundColor" red="0.1529411765" green="0.16078431369999999" blue="0.1960784314" alpha="0.84705882349999995" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="80" id="asY-oH-xMR"/>
+                                    <constraint firstAttribute="height" constant="80" id="hrj-q1-cpJ"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="Deg">
+                                            <attributes>
+                                                <font key="NSFont" size="13" name="ProductSans-Regular"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                    <color key="baseForegroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </buttonConfiguration>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="RoundButton" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2fb-xC-QCF" customClass="roundButton" customModule="NEW_CALC" customModuleProvider="target">
+                                <rect key="frame" x="467" y="183" width="50" height="50"/>
+                                <color key="backgroundColor" red="0.1529411765" green="0.16078431369999999" blue="0.1960784314" alpha="0.84705882349999995" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="80" id="6bK-sq-bQq"/>
+                                    <constraint firstAttribute="height" constant="80" id="7mM-gP-NCF"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="Inv">
+                                            <attributes>
+                                                <font key="NSFont" size="15" name="ProductSans-Regular"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                    <color key="baseForegroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </buttonConfiguration>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="RoundButton" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pp9-3t-9yj" customClass="roundButton" customModule="NEW_CALC" customModuleProvider="target">
+                                <rect key="frame" x="408" y="357" width="50" height="50"/>
+                                <color key="backgroundColor" red="0.1529411765" green="0.16078431369999999" blue="0.1960784314" alpha="0.84705882349999995" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="1XY-fN-n5Z"/>
+                                    <constraint firstAttribute="width" constant="80" id="oHh-GW-aEO"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="Pi">
+                                            <attributes>
+                                                <font key="NSFont" size="15" name="ProductSans-Regular"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                    <color key="baseForegroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </buttonConfiguration>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="RoundButton" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vg5-hs-Cp0" customClass="roundButton" customModule="NEW_CALC" customModuleProvider="target">
+                                <rect key="frame" x="408" y="299" width="50" height="50"/>
+                                <color key="backgroundColor" red="0.1529411765" green="0.16078431369999999" blue="0.1960784314" alpha="0.84705882349999995" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="R8S-iy-zde"/>
+                                    <constraint firstAttribute="width" constant="80" id="Xqb-Fi-u08"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="hyp">
+                                            <attributes>
+                                                <font key="NSFont" size="15" name="ProductSans-Regular"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                    <color key="baseForegroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </buttonConfiguration>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="RoundButton" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IjL-P6-Ou9" customClass="roundButton" customModule="NEW_CALC" customModuleProvider="target">
+                                <rect key="frame" x="407" y="241" width="50" height="50"/>
+                                <color key="backgroundColor" red="0.1529411765" green="0.16078431369999999" blue="0.1960784314" alpha="0.84705882349999995" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="80" id="Iqe-ud-Cbh"/>
+                                    <constraint firstAttribute="height" constant="80" id="NVE-cT-nby"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="10x">
+                                            <attributes>
+                                                <font key="NSFont" size="15" name="ProductSans-Regular"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                    <color key="baseForegroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </buttonConfiguration>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="RoundButton" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6bg-JQ-fh2" customClass="roundButton" customModule="NEW_CALC" customModuleProvider="target">
+                                <rect key="frame" x="408" y="183" width="50" height="50"/>
+                                <color key="backgroundColor" red="0.1529411765" green="0.16078431369999999" blue="0.1960784314" alpha="0.84705882349999995" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="KGy-ES-SGQ"/>
+                                    <constraint firstAttribute="width" constant="80" id="ToV-SK-ajU"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="ex">
+                                            <attributes>
+                                                <font key="NSFont" size="15" name="ProductSans-Regular"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                    <color key="baseForegroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </buttonConfiguration>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="RoundButton" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QaO-rl-wjz" customClass="roundButton" customModule="NEW_CALC" customModuleProvider="target">
+                                <rect key="frame" x="349" y="357" width="50" height="50"/>
+                                <color key="backgroundColor" red="0.1529411765" green="0.16078431369999999" blue="0.1960784314" alpha="0.84705882349999995" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="FSJ-Xb-mAE"/>
+                                    <constraint firstAttribute="width" constant="80" id="eny-qV-6KL"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="tan">
+                                            <attributes>
+                                                <font key="NSFont" size="15" name="ProductSans-Regular"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                    <color key="baseForegroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </buttonConfiguration>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="RoundButton" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a4d-iA-CWX" customClass="roundButton" customModule="NEW_CALC" customModuleProvider="target">
+                                <rect key="frame" x="349" y="299" width="50" height="50"/>
+                                <color key="backgroundColor" red="0.1529411765" green="0.16078431369999999" blue="0.1960784314" alpha="0.84705882349999995" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="iWS-3w-Rgf"/>
+                                    <constraint firstAttribute="width" constant="80" id="peW-6D-wT1"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="EE">
+                                            <attributes>
+                                                <font key="NSFont" size="15" name="ProductSans-Regular"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                    <color key="baseForegroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </buttonConfiguration>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="RoundButton" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VFW-hN-hM3" customClass="roundButton" customModule="NEW_CALC" customModuleProvider="target">
+                                <rect key="frame" x="349" y="241" width="50" height="50"/>
+                                <color key="backgroundColor" red="0.1529411765" green="0.16078431369999999" blue="0.1960784314" alpha="0.84705882349999995" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="80" id="1J1-Pb-p8H"/>
+                                    <constraint firstAttribute="height" constant="80" id="7No-vU-OOD"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="log10">
+                                            <attributes>
+                                                <font key="NSFont" size="10" name="ProductSans-Regular"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                    <color key="baseForegroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </buttonConfiguration>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="RoundButton" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fkr-sB-VYD" customClass="roundButton" customModule="NEW_CALC" customModuleProvider="target">
+                                <rect key="frame" x="349" y="183" width="50" height="50"/>
+                                <color key="backgroundColor" red="0.1529411765" green="0.16078431369999999" blue="0.1960784314" alpha="0.84705882349999995" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="80" id="jiW-pm-ePX"/>
+                                    <constraint firstAttribute="height" constant="80" id="sYI-c7-0uF"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="e">
+                                            <attributes>
+                                                <font key="NSFont" size="15" name="ProductSans-Regular"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                    <color key="baseForegroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </buttonConfiguration>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="RoundButton" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Km-1I-lj6" customClass="roundButton" customModule="NEW_CALC" customModuleProvider="target">
+                                <rect key="frame" x="584" y="357" width="50" height="50"/>
+                                <color key="backgroundColor" red="0.1529411765" green="0.16078431369999999" blue="0.1960784314" alpha="0.84705882349999995" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="FFB-3C-PSM"/>
+                                    <constraint firstAttribute="width" constant="80" id="rpA-OI-eP4"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="0">
+                                            <attributes>
+                                                <font key="NSFont" size="26" name="ProductSans-Regular"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                    <color key="baseForegroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </buttonConfiguration>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="RoundButton" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="numberPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="x5V-jE-jM8"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sYg-en-GbZ" customClass="roundButton" customModule="NEW_CALC" customModuleProvider="target">
+                                <rect key="frame" x="526" y="299" width="50" height="50"/>
+                                <color key="backgroundColor" red="0.1529411765" green="0.16078431369999999" blue="0.1960784314" alpha="0.84705882349999995" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="FHY-h2-GZH"/>
+                                    <constraint firstAttribute="width" constant="80" id="qVL-Bd-okY"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="1">
+                                            <attributes>
+                                                <font key="NSFont" size="26" name="ProductSans-Regular"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                    <color key="baseForegroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </buttonConfiguration>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="RoundButton" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="numberPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="WqG-jj-6Ih"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BGm-dl-Wud" customClass="roundButton" customModule="NEW_CALC" customModuleProvider="target">
+                                <rect key="frame" x="642" y="299" width="50" height="50"/>
+                                <color key="backgroundColor" red="0.1529411765" green="0.16078431369999999" blue="0.1960784314" alpha="0.84705882349999995" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="93P-bC-yjv"/>
+                                    <constraint firstAttribute="width" constant="80" id="z3G-wE-Cd1"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="2">
+                                            <attributes>
+                                                <font key="NSFont" size="26" name="ProductSans-Regular"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                    <color key="baseForegroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </buttonConfiguration>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="RoundButton" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="numberPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Czd-yg-8MU"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="3" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yyj-gV-kZt" customClass="roundButton" customModule="NEW_CALC" customModuleProvider="target">
+                                <rect key="frame" x="584" y="299" width="50" height="50"/>
+                                <color key="backgroundColor" red="0.1529411765" green="0.16078431369999999" blue="0.1960784314" alpha="0.84705882349999995" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="80" id="QC5-Bb-tev"/>
+                                    <constraint firstAttribute="height" constant="80" id="eqY-C1-bHT"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="3">
+                                            <attributes>
+                                                <font key="NSFont" size="26" name="ProductSans-Regular"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                    <color key="baseForegroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </buttonConfiguration>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="RoundButton" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="numberPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="68q-nv-dku"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="5" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="97V-XN-kxK" customClass="roundButton" customModule="NEW_CALC" customModuleProvider="target">
+                                <rect key="frame" x="584" y="241" width="50" height="50"/>
+                                <color key="backgroundColor" red="0.1529411765" green="0.16078431369999999" blue="0.1960784314" alpha="0.84705882349999995" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="80" id="Jji-4E-V9Y"/>
+                                    <constraint firstAttribute="height" constant="80" id="qNP-nu-A53"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="5">
+                                            <attributes>
+                                                <font key="NSFont" size="27" name="ProductSans-Regular"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                    <color key="baseForegroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </buttonConfiguration>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="RoundButton" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="numberPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="AEJ-4W-6H0"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="6" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fcP-HU-9PT" customClass="roundButton" customModule="NEW_CALC" customModuleProvider="target">
+                                <rect key="frame" x="642" y="241" width="50" height="50"/>
+                                <color key="backgroundColor" red="0.1529411765" green="0.16078431369999999" blue="0.1960784314" alpha="0.84705882349999995" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="6Yj-E6-0qd"/>
+                                    <constraint firstAttribute="width" constant="80" id="fH7-x6-0RR"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="6">
+                                            <attributes>
+                                                <font key="NSFont" size="26" name="ProductSans-Regular"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                    <color key="baseForegroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </buttonConfiguration>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="RoundButton" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="numberPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6Z5-Sx-3qC"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="7" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LHp-ta-Dc5" customClass="roundButton" customModule="NEW_CALC" customModuleProvider="target">
+                                <rect key="frame" x="526" y="183" width="50" height="50"/>
+                                <color key="backgroundColor" red="0.1529411765" green="0.16078431369999999" blue="0.1960784314" alpha="0.84705882349999995" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="80" id="3zG-33-m7X"/>
+                                    <constraint firstAttribute="height" constant="80" id="i42-OU-u1i"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="7">
+                                            <attributes>
+                                                <font key="NSFont" size="26" name="ProductSans-Regular"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                    <color key="baseForegroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </buttonConfiguration>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="RoundButton" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="numberPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5fC-w9-PJI"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="8" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VaR-d0-NMb" customClass="roundButton" customModule="NEW_CALC" customModuleProvider="target">
+                                <rect key="frame" x="584" y="183" width="50" height="50"/>
+                                <color key="backgroundColor" red="0.1529411765" green="0.16078431369999999" blue="0.1960784314" alpha="0.84705882349999995" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="1Mg-yc-epn"/>
+                                    <constraint firstAttribute="width" constant="80" id="khs-fy-9VO"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="8">
+                                            <attributes>
+                                                <font key="NSFont" size="26" name="ProductSans-Regular"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                    <color key="baseForegroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </buttonConfiguration>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="RoundButton" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="numberPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hYb-6J-3Ui"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="9" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NaP-H9-qEq" customClass="roundButton" customModule="NEW_CALC" customModuleProvider="target">
+                                <rect key="frame" x="642" y="183" width="50" height="50"/>
+                                <color key="backgroundColor" red="0.1529411765" green="0.16078431369999999" blue="0.1960784314" alpha="0.84705882349999995" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="80" id="BYY-5G-cmC"/>
+                                    <constraint firstAttribute="height" constant="80" id="val-8B-cnA"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="9">
+                                            <attributes>
+                                                <font key="NSFont" size="26" name="ProductSans-Regular"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                    <color key="baseForegroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </buttonConfiguration>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="RoundButton" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="numberPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="JJ3-Gq-3ok"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DmL-b4-2fX" customClass="roundButton" customModule="NEW_CALC" customModuleProvider="target">
+                                <rect key="frame" x="526" y="357" width="50" height="50"/>
+                                <color key="backgroundColor" red="0.1529411765" green="0.16078431369999999" blue="0.1960784314" alpha="0.84705882349999995" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="80" id="oIP-j9-zeb"/>
+                                    <constraint firstAttribute="height" constant="80" id="vdg-5I-Noi"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="^">
+                                            <attributes>
+                                                <color key="NSColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <font key="NSFont" size="15" name="ProductSans-Regular"/>
+                                                <real key="NSKern" value="0.0"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                <color key="NSStrokeColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <real key="NSStrokeWidth" value="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                    <color key="baseForegroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </buttonConfiguration>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="RoundButton" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bnj-Jm-0yb" customClass="roundButton" customModule="NEW_CALC" customModuleProvider="target">
+                                <rect key="frame" x="291" y="357" width="50" height="50"/>
+                                <color key="backgroundColor" red="0.1529411765" green="0.16078431369999999" blue="0.1960784314" alpha="0.84705882349999995" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="80" id="UMF-WK-uGr"/>
+                                    <constraint firstAttribute="height" constant="80" id="oCk-Hh-mdi"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="cos">
+                                            <attributes>
+                                                <font key="NSFont" size="15" name="ProductSans-Regular"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                    <color key="baseForegroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </buttonConfiguration>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="RoundButton" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DHV-N8-4dl" customClass="roundButton" customModule="NEW_CALC" customModuleProvider="target">
+                                <rect key="frame" x="291" y="299" width="50" height="50"/>
+                                <color key="backgroundColor" red="0.1529411765" green="0.16078431369999999" blue="0.1960784314" alpha="0.84705882349999995" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="80" id="Jbd-Nx-IqC"/>
+                                    <constraint firstAttribute="height" constant="80" id="jFk-pw-Dnm"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="In">
+                                            <attributes>
+                                                <font key="NSFont" size="15" name="ProductSans-Regular"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                    <color key="baseForegroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </buttonConfiguration>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="RoundButton" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cUB-PY-zgC" customClass="roundButton" customModule="NEW_CALC" customModuleProvider="target">
+                                <rect key="frame" x="291" y="241" width="50" height="50"/>
+                                <color key="backgroundColor" red="0.1529411765" green="0.16078431369999999" blue="0.1960784314" alpha="0.84705882349999995" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="80" id="0cS-hL-3jH"/>
+                                    <constraint firstAttribute="height" constant="80" id="wzr-Wp-G9b"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="log">
+                                            <attributes>
+                                                <font key="NSFont" size="10" name="ProductSans-Regular"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                    <color key="baseForegroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </buttonConfiguration>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="RoundButton" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2PA-Ng-Ng5" customClass="roundButton" customModule="NEW_CALC" customModuleProvider="target">
+                                <rect key="frame" x="233" y="241" width="50" height="50"/>
+                                <color key="backgroundColor" red="0.1529411765" green="0.16078431369999999" blue="0.1960784314" alpha="0.84705882349999995" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="C0x-vd-8Yz"/>
+                                    <constraint firstAttribute="width" constant="80" id="Qtv-bo-UDY"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="Rand">
+                                            <attributes>
+                                                <font key="NSFont" size="10" name="ProductSans-Regular"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                    <color key="baseForegroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </buttonConfiguration>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="RoundButton" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R1S-ds-ESh" customClass="roundButton" customModule="NEW_CALC" customModuleProvider="target">
+                                <rect key="frame" x="233" y="183" width="50" height="50"/>
+                                <color key="backgroundColor" red="0.1529411765" green="0.16078431369999999" blue="0.1960784314" alpha="0.84705882349999995" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="Eco-b0-A0Y"/>
+                                    <constraint firstAttribute="width" constant="80" id="IAZ-S3-IYs"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="Rad">
+                                            <attributes>
+                                                <font key="NSFont" size="10" name="ProductSans-Regular"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                    <color key="baseForegroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </buttonConfiguration>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="RoundButton" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G1C-bC-bZg" customClass="roundButton" customModule="NEW_CALC" customModuleProvider="target">
+                                <rect key="frame" x="233" y="299" width="50" height="50"/>
+                                <color key="backgroundColor" red="0.1529411765" green="0.16078431369999999" blue="0.1960784314" alpha="0.84705882349999995" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="80" id="NbL-05-QvU"/>
+                                    <constraint firstAttribute="height" constant="80" id="tAJ-9b-Qiw"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="xy">
+                                            <attributes>
+                                                <font key="NSFont" size="15" name="ProductSans-Regular"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                    <color key="baseForegroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </buttonConfiguration>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="RoundButton" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ri9-DP-ZSC" customClass="roundButton" customModule="NEW_CALC" customModuleProvider="target">
+                                <rect key="frame" x="233" y="357" width="50" height="50"/>
+                                <color key="backgroundColor" red="0.1529411765" green="0.16078431369999999" blue="0.1960784314" alpha="0.84705882349999995" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="80" id="7eb-g8-Ixw"/>
+                                    <constraint firstAttribute="height" constant="80" id="M2E-5F-Zc5"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="sin">
+                                            <attributes>
+                                                <font key="NSFont" size="15" name="ProductSans-Regular"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                    <color key="baseForegroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </buttonConfiguration>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="RoundButton" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wd9-tB-IR0" customClass="roundButton" customModule="NEW_CALC" customModuleProvider="target">
+                                <rect key="frame" x="175" y="183" width="50" height="50"/>
+                                <color key="backgroundColor" red="0.1529411765" green="0.16078431369999999" blue="0.1960784314" alpha="0.84705882349999995" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="80" id="1r0-va-GsN"/>
+                                    <constraint firstAttribute="height" constant="80" id="Xct-Hn-poG"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="sqrt.x">
+                                            <attributes>
+                                                <font key="NSFont" size="10" name="ProductSans-Regular"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                    <color key="baseForegroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </buttonConfiguration>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="RoundButton" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HCe-J5-cAS" customClass="roundButton" customModule="NEW_CALC" customModuleProvider="target">
+                                <rect key="frame" x="175" y="241" width="50" height="50"/>
+                                <color key="backgroundColor" red="0.1529411765" green="0.16078431369999999" blue="0.1960784314" alpha="0.84705882349999995" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="80" id="PON-xz-drr"/>
+                                    <constraint firstAttribute="height" constant="80" id="arI-yn-Zcc"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="x2">
+                                            <attributes>
+                                                <font key="NSFont" size="15" name="ProductSans-Regular"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                    <color key="baseForegroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </buttonConfiguration>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="RoundButton" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fGf-U7-s15" customClass="roundButton" customModule="NEW_CALC" customModuleProvider="target">
+                                <rect key="frame" x="174" y="299" width="50" height="50"/>
+                                <color key="backgroundColor" red="0.1529411765" green="0.16078431369999999" blue="0.1960784314" alpha="0.84705882349999995" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="REF-uu-rfl"/>
+                                    <constraint firstAttribute="width" constant="80" id="tsO-Jg-DlA"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="cb.x">
+                                            <attributes>
+                                                <font key="NSFont" size="13" name="ProductSans-Regular"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                    <color key="baseForegroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </buttonConfiguration>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="RoundButton" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jZB-FF-RgA" customClass="roundButton" customModule="NEW_CALC" customModuleProvider="target">
+                                <rect key="frame" x="175" y="357" width="50" height="50"/>
+                                <color key="backgroundColor" red="0.1529411765" green="0.16078431369999999" blue="0.1960784314" alpha="0.84705882349999995" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="80" id="Zre-Zi-bA0"/>
+                                    <constraint firstAttribute="height" constant="80" id="kt0-VD-bnG"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="tanh">
+                                            <attributes>
+                                                <font key="NSFont" size="10" name="ProductSans-Regular"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                    <color key="baseForegroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </buttonConfiguration>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="RoundButton" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bg1-AL-ndb" customClass="roundButton" customModule="NEW_CALC" customModuleProvider="target">
+                                <rect key="frame" x="117" y="299" width="50" height="50"/>
+                                <color key="backgroundColor" red="0.1529411765" green="0.16078431369999999" blue="0.1960784314" alpha="0.84705882349999995" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="80" id="Czj-HO-q9r"/>
+                                    <constraint firstAttribute="height" constant="80" id="H4D-99-RLi"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="sinh">
+                                            <attributes>
+                                                <font key="NSFont" size="10" name="ProductSans-Regular"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                    <color key="baseForegroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </buttonConfiguration>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="RoundButton" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TIF-iF-qAP" customClass="roundButton" customModule="NEW_CALC" customModuleProvider="target">
+                                <rect key="frame" x="117" y="357" width="50" height="50"/>
+                                <color key="backgroundColor" red="0.1529411765" green="0.16078431369999999" blue="0.1960784314" alpha="0.84705882349999995" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="80" id="Ezz-Zy-P18"/>
+                                    <constraint firstAttribute="height" constant="80" id="RZl-3g-AgY"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="cosh">
+                                            <attributes>
+                                                <font key="NSFont" size="10" name="ProductSans-Regular"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                    <color key="baseForegroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </buttonConfiguration>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="RoundButton" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HeB-W2-hiV" customClass="roundButton" customModule="NEW_CALC" customModuleProvider="target">
+                                <rect key="frame" x="117" y="241" width="50" height="50"/>
+                                <color key="backgroundColor" red="0.1529411765" green="0.16078431369999999" blue="0.1960784314" alpha="0.84705882349999995" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="kHG-9x-Cbr"/>
+                                    <constraint firstAttribute="width" constant="80" id="z81-IX-DYk"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="sin">
+                                            <attributes>
+                                                <font key="NSFont" size="15" name="ProductSans-Regular"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                    <color key="baseForegroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </buttonConfiguration>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="RoundButton" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FYL-RM-L1w" customClass="roundButton" customModule="NEW_CALC" customModuleProvider="target">
+                                <rect key="frame" x="117" y="183" width="50" height="50"/>
+                                <color key="backgroundColor" red="0.1529411765" green="0.16078431369999999" blue="0.1960784314" alpha="0.84705882349999995" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="80" id="CEh-K0-JjY"/>
+                                    <constraint firstAttribute="height" constant="80" id="SjD-S0-Xhu"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content=")">
+                                            <attributes>
+                                                <font key="NSFont" size="15" name="ProductSans-Regular"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                    <color key="baseForegroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </buttonConfiguration>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="RoundButton" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NnM-h8-k3Q" customClass="roundButton" customModule="NEW_CALC" customModuleProvider="target">
+                                <rect key="frame" x="60" y="183" width="50" height="50"/>
+                                <color key="backgroundColor" red="0.1529411765" green="0.16078431369999999" blue="0.1960784314" alpha="0.84705882349999995" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="Vcq-ul-fjy"/>
+                                    <constraint firstAttribute="width" constant="80" id="mlQ-ef-3Uy"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="(">
+                                            <attributes>
+                                                <font key="NSFont" size="15" name="ProductSans-Regular"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                    <color key="baseForegroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </buttonConfiguration>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="RoundButton" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eWi-Ys-SYl" customClass="roundButton" customModule="NEW_CALC" customModuleProvider="target">
+                                <rect key="frame" x="60" y="241" width="50" height="50"/>
+                                <color key="backgroundColor" red="0.1529411765" green="0.16078431369999999" blue="0.1960784314" alpha="0.84705882349999995" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="80" id="Rho-FO-D8E"/>
+                                    <constraint firstAttribute="height" constant="80" id="gMk-em-ya3"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="2nd">
+                                            <attributes>
+                                                <font key="NSFont" size="15" name="ProductSans-Regular"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                    <color key="baseForegroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </buttonConfiguration>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="RoundButton" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kFt-eU-Dcl" customClass="roundButton" customModule="NEW_CALC" customModuleProvider="target">
+                                <rect key="frame" x="60" y="299" width="50" height="50"/>
+                                <color key="backgroundColor" red="0.1529411765" green="0.16078431369999999" blue="0.1960784314" alpha="0.84705882349999995" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="80" id="2tw-yK-Z3L"/>
+                                    <constraint firstAttribute="height" constant="80" id="lVV-hZ-JSX"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="1/x">
+                                            <attributes>
+                                                <font key="NSFont" size="15" name="ProductSans-Regular"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                    <color key="baseForegroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </buttonConfiguration>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="RoundButton" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h8c-r7-Uo9" customClass="roundButton" customModule="NEW_CALC" customModuleProvider="target">
+                                <rect key="frame" x="60" y="357" width="50" height="50"/>
+                                <color key="backgroundColor" red="0.1529411765" green="0.16078431369999999" blue="0.1960784314" alpha="0.84705882349999995" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="6GX-nJ-zVE"/>
+                                    <constraint firstAttribute="width" constant="80" id="Rsq-xB-zhW"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="x!">
+                                            <attributes>
+                                                <font key="NSFont" size="15" name="ProductSans-Regular"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                    <color key="baseForegroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </buttonConfiguration>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="RoundButton" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                            </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lDf-Nn-fXS">
                                 <rect key="frame" x="0.0" y="44" width="428" height="358"/>
                                 <subviews>
@@ -39,6 +1345,7 @@
                                     <constraint firstItem="0ql-EY-bWk" firstAttribute="leading" secondItem="lDf-Nn-fXS" secondAttribute="leading" constant="20" id="pVS-tr-ZyD"/>
                                     <constraint firstAttribute="trailing" secondItem="0ql-EY-bWk" secondAttribute="trailing" constant="20" id="xJO-LJ-kDt"/>
                                 </constraints>
+                                <variation key="heightClass=compact-widthClass=regular" hidden="YES"/>
                             </view>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="Mrw-mn-3hv">
                                 <rect key="frame" x="34" y="427" width="360" height="450"/>
@@ -613,7 +1920,31 @@
                                     <constraint firstAttribute="height" constant="450" id="2Gm-A1-P2M"/>
                                     <constraint firstAttribute="width" constant="360" id="wdN-IC-eem"/>
                                 </constraints>
+                                <variation key="heightClass=compact-widthClass=regular" hidden="YES"/>
                             </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pSp-Ge-enj" customClass="roundButton" customModule="NEW_CALC" customModuleProvider="target">
+                                <rect key="frame" x="291" y="182" width="50" height="50"/>
+                                <color key="backgroundColor" red="0.1529411765" green="0.16078431369999999" blue="0.1960784314" alpha="0.84705882349999995" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="80" id="lH6-iz-moX"/>
+                                    <constraint firstAttribute="height" constant="80" id="sGR-j8-yq3"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="y.rt.x">
+                                            <attributes>
+                                                <font key="NSFont" size="10" name="ProductSans-Regular"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                    <color key="baseForegroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </buttonConfiguration>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="RoundButton" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -625,14 +1956,100 @@
                             <constraint firstItem="Mrw-mn-3hv" firstAttribute="top" secondItem="lDf-Nn-fXS" secondAttribute="bottom" constant="25" id="nJB-Ym-W9m"/>
                             <constraint firstItem="Mrw-mn-3hv" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="zP3-gn-Hd2"/>
                         </constraints>
+                        <variation key="heightClass=compact-widthClass=regular">
+                            <mask key="subviews">
+                                <exclude reference="lDf-Nn-fXS"/>
+                                <exclude reference="Mrw-mn-3hv"/>
+                            </mask>
+                        </variation>
                     </view>
                     <connections>
-                        <outlet property="outputLabel" destination="0ql-EY-bWk" id="JPA-qJ-aGj"/>
+                        <outlet property="outputLabel" destination="0ql-EY-bWk" id="jBm-Zm-Vn8"/>
                     </connections>
                 </viewController>
+                <view contentMode="scaleToFill" id="CFA-a9-4bw">
+                    <rect key="frame" x="0.0" y="0.0" width="926" height="428"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Cyg-DT-AcI">
+                            <rect key="frame" x="0.0" y="9" width="926" height="114"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eEa-Vf-din">
+                                    <rect key="frame" x="8" y="19" width="910" height="76"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <attributedString key="attributedText">
+                                        <fragment content="0">
+                                            <attributes>
+                                                <color key="NSColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <font key="NSFont" size="65" name="ProductSans-Regular"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="right" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" red="0.1529411765" green="0.16078431369999999" blue="0.1960784314" alpha="0.84705882349999995" colorSpace="calibratedRGB"/>
+                            <variation key="heightClass=compact-widthClass=regular" hidden="YES"/>
+                        </view>
+                        <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" distribution="equalSpacing" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="fr2-5X-bZF">
+                            <rect key="frame" x="317.66666666666674" y="25" width="360" height="450"/>
+                            <subviews>
+                                <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="A00-hs-ir2">
+                                    <rect key="frame" x="0.0" y="0.0" width="360" height="80"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="360" id="39c-EH-l1B"/>
+                                        <constraint firstAttribute="height" constant="80" id="gvm-bs-0v6"/>
+                                    </constraints>
+                                </stackView>
+                                <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="SVJ-WF-Kll">
+                                    <rect key="frame" x="0.0" y="92.666666666666686" width="360" height="80"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="360" id="AY9-Hy-udO"/>
+                                        <constraint firstAttribute="height" constant="80" id="pm0-Z9-s2y"/>
+                                    </constraints>
+                                </stackView>
+                                <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="UFk-02-HxO">
+                                    <rect key="frame" x="0.0" y="185" width="360" height="80"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="360" id="Jbb-ji-EE0"/>
+                                        <constraint firstAttribute="height" constant="80" id="Zve-nv-EYO"/>
+                                    </constraints>
+                                </stackView>
+                                <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="Pd0-64-fa4">
+                                    <rect key="frame" x="0.0" y="277.66666666666669" width="360" height="80"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="80" id="iJT-2v-OY9"/>
+                                        <constraint firstAttribute="width" constant="360" id="vqT-Xs-TRX"/>
+                                    </constraints>
+                                </stackView>
+                                <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="9xz-7a-ROd">
+                                    <rect key="frame" x="0.0" y="370" width="360" height="80"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="360" id="Yz0-X8-6Ra"/>
+                                        <constraint firstAttribute="height" constant="80" id="xjS-r6-Won"/>
+                                    </constraints>
+                                </stackView>
+                            </subviews>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="450" id="1Y9-is-vdD"/>
+                                <constraint firstAttribute="width" constant="360" id="Rr3-kN-MbD"/>
+                            </constraints>
+                            <variation key="heightClass=regular-widthClass=compact" hidden="YES"/>
+                        </stackView>
+                    </subviews>
+                    <viewLayoutGuide key="safeArea" id="p1b-Ay-bPa"/>
+                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <variation key="heightClass=regular-widthClass=compact">
+                        <mask key="subviews">
+                            <exclude reference="fr2-5X-bZF"/>
+                        </mask>
+                    </variation>
+                </view>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="19.626168224299064" y="68.682505399568043"/>
+            <point key="canvasLocation" x="19.438444924406049" y="67.289719626168221"/>
         </scene>
     </scenes>
     <designables>
@@ -642,11 +2059,74 @@
         <designable name="1Wq-5i-O60">
             <size key="intrinsicContentSize" width="44.333333333333336" height="56"/>
         </designable>
+        <designable name="2PA-Ng-Ng5">
+            <size key="intrinsicContentSize" width="48" height="25.666666666666668"/>
+        </designable>
+        <designable name="2fb-xC-QCF">
+            <size key="intrinsicContentSize" width="44" height="31.666666666666668"/>
+        </designable>
+        <designable name="6G4-GH-O3v">
+            <size key="intrinsicContentSize" width="42.666666666666664" height="31.666666666666668"/>
+        </designable>
+        <designable name="6Km-1I-lj6">
+            <size key="intrinsicContentSize" width="38.666666666666664" height="44.333333333333336"/>
+        </designable>
+        <designable name="6bg-JQ-fh2">
+            <size key="intrinsicContentSize" width="40" height="31.666666666666668"/>
+        </designable>
+        <designable name="784-iJ-dgu">
+            <size key="intrinsicContentSize" width="39.666666666666664" height="43"/>
+        </designable>
+        <designable name="7eY-Oa-huu">
+            <size key="intrinsicContentSize" width="42" height="31.666666666666668"/>
+        </designable>
         <designable name="8vF-Bw-ySd">
             <size key="intrinsicContentSize" width="44.333333333333336" height="56"/>
         </designable>
+        <designable name="97V-XN-kxK">
+            <size key="intrinsicContentSize" width="39.333333333333336" height="45.666666666666664"/>
+        </designable>
+        <designable name="BGm-dl-Wud">
+            <size key="intrinsicContentSize" width="38.666666666666664" height="44.333333333333336"/>
+        </designable>
+        <designable name="CKw-P6-ftI">
+            <size key="intrinsicContentSize" width="31.333333333333332" height="44.333333333333336"/>
+        </designable>
+        <designable name="CfA-Do-a7w">
+            <size key="intrinsicContentSize" width="34.333333333333336" height="44.333333333333336"/>
+        </designable>
+        <designable name="CjG-rO-xRw">
+            <size key="intrinsicContentSize" width="39.666666666666664" height="44.333333333333336"/>
+        </designable>
+        <designable name="DHV-N8-4dl">
+            <size key="intrinsicContentSize" width="36.333333333333336" height="31.666666666666668"/>
+        </designable>
+        <designable name="DmL-b4-2fX">
+            <size key="intrinsicContentSize" width="33" height="31.666666666666668"/>
+        </designable>
         <designable name="ElN-p4-Bib">
             <size key="intrinsicContentSize" width="61" height="57"/>
+        </designable>
+        <designable name="FYL-RM-L1w">
+            <size key="intrinsicContentSize" width="28" height="31.666666666666668"/>
+        </designable>
+        <designable name="G1C-bC-bZg">
+            <size key="intrinsicContentSize" width="39.333333333333336" height="31.666666666666668"/>
+        </designable>
+        <designable name="G3m-No-Nak">
+            <size key="intrinsicContentSize" width="38.666666666666664" height="44.333333333333336"/>
+        </designable>
+        <designable name="H4j-cP-4uH">
+            <size key="intrinsicContentSize" width="46" height="31.666666666666668"/>
+        </designable>
+        <designable name="HCe-J5-cAS">
+            <size key="intrinsicContentSize" width="40.333333333333336" height="31.666666666666668"/>
+        </designable>
+        <designable name="HeB-W2-hiV">
+            <size key="intrinsicContentSize" width="43.333333333333336" height="31.666666666666668"/>
+        </designable>
+        <designable name="IjL-P6-Ou9">
+            <size key="intrinsicContentSize" width="48.666666666666664" height="31.666666666666668"/>
         </designable>
         <designable name="KAx-R9-FEO">
             <size key="intrinsicContentSize" width="45.666666666666664" height="56"/>
@@ -657,17 +2137,95 @@
         <designable name="KVv-3I-oa4">
             <size key="intrinsicContentSize" width="45.666666666666664" height="56"/>
         </designable>
+        <designable name="LHp-ta-Dc5">
+            <size key="intrinsicContentSize" width="38.666666666666664" height="44.333333333333336"/>
+        </designable>
+        <designable name="NaP-H9-qEq">
+            <size key="intrinsicContentSize" width="38.666666666666664" height="44.333333333333336"/>
+        </designable>
+        <designable name="NnM-h8-k3Q">
+            <size key="intrinsicContentSize" width="28" height="31.666666666666668"/>
+        </designable>
+        <designable name="Pp9-3t-9yj">
+            <size key="intrinsicContentSize" width="37.333333333333336" height="31.666666666666668"/>
+        </designable>
+        <designable name="QaO-rl-wjz">
+            <size key="intrinsicContentSize" width="45.333333333333336" height="31.666666666666668"/>
+        </designable>
+        <designable name="R1S-ds-ESh">
+            <size key="intrinsicContentSize" width="42.333333333333336" height="25.666666666666668"/>
+        </designable>
+        <designable name="Ri9-DP-ZSC">
+            <size key="intrinsicContentSize" width="43.333333333333336" height="31.666666666666668"/>
+        </designable>
+        <designable name="TIF-iF-qAP">
+            <size key="intrinsicContentSize" width="46" height="25.666666666666668"/>
+        </designable>
+        <designable name="TYC-Km-Cvu">
+            <size key="intrinsicContentSize" width="39.666666666666664" height="44.333333333333336"/>
+        </designable>
         <designable name="ToS-dd-g1K">
             <size key="intrinsicContentSize" width="45.666666666666664" height="56"/>
+        </designable>
+        <designable name="VFW-hN-hM3">
+            <size key="intrinsicContentSize" width="49" height="25.666666666666668"/>
         </designable>
         <designable name="VGX-XR-2Bs">
             <size key="intrinsicContentSize" width="34.333333333333336" height="56"/>
         </designable>
+        <designable name="VaR-d0-NMb">
+            <size key="intrinsicContentSize" width="38.666666666666664" height="44.333333333333336"/>
+        </designable>
+        <designable name="Vg5-hs-Cp0">
+            <size key="intrinsicContentSize" width="49" height="31.666666666666668"/>
+        </designable>
+        <designable name="Wd9-tB-IR0">
+            <size key="intrinsicContentSize" width="49.666666666666664" height="25.666666666666668"/>
+        </designable>
         <designable name="XK4-56-bAX">
             <size key="intrinsicContentSize" width="44.333333333333336" height="56"/>
         </designable>
+        <designable name="ZCE-R0-vpH">
+            <size key="intrinsicContentSize" width="43" height="44.333333333333336"/>
+        </designable>
+        <designable name="Zfr-qv-v4v">
+            <size key="intrinsicContentSize" width="47.666666666666664" height="29.333333333333332"/>
+        </designable>
+        <designable name="Zhe-ra-jaA">
+            <size key="intrinsicContentSize" width="39.666666666666664" height="44.333333333333336"/>
+        </designable>
+        <designable name="a4d-iA-CWX">
+            <size key="intrinsicContentSize" width="42.333333333333336" height="31.666666666666668"/>
+        </designable>
+        <designable name="bg1-AL-ndb">
+            <size key="intrinsicContentSize" width="42.666666666666664" height="25.666666666666668"/>
+        </designable>
         <designable name="bin-op-BsF">
             <size key="intrinsicContentSize" width="38.333333333333336" height="56"/>
+        </designable>
+        <designable name="bnj-Jm-0yb">
+            <size key="intrinsicContentSize" width="48.333333333333336" height="31.666666666666668"/>
+        </designable>
+        <designable name="cUB-PY-zgC">
+            <size key="intrinsicContentSize" width="38" height="25.666666666666668"/>
+        </designable>
+        <designable name="eWL-kJ-9iW">
+            <size key="intrinsicContentSize" width="39.666666666666664" height="44.333333333333336"/>
+        </designable>
+        <designable name="eWi-Ys-SYl">
+            <size key="intrinsicContentSize" width="49.666666666666664" height="31.666666666666668"/>
+        </designable>
+        <designable name="fGf-U7-s15">
+            <size key="intrinsicContentSize" width="49.333333333333336" height="29.333333333333332"/>
+        </designable>
+        <designable name="fcP-HU-9PT">
+            <size key="intrinsicContentSize" width="38.666666666666664" height="44.333333333333336"/>
+        </designable>
+        <designable name="fkr-sB-VYD">
+            <size key="intrinsicContentSize" width="32.333333333333336" height="31.666666666666668"/>
+        </designable>
+        <designable name="gA5-Oa-i6f">
+            <size key="intrinsicContentSize" width="39.666666666666664" height="44.333333333333336"/>
         </designable>
         <designable name="gpV-8b-dGy">
             <size key="intrinsicContentSize" width="45.666666666666664" height="56"/>
@@ -675,26 +2233,50 @@
         <designable name="gst-FX-1qA">
             <size key="intrinsicContentSize" width="44.333333333333336" height="56"/>
         </designable>
+        <designable name="h8c-r7-Uo9">
+            <size key="intrinsicContentSize" width="35.666666666666664" height="31.666666666666668"/>
+        </designable>
         <designable name="hbP-QA-kga">
             <size key="intrinsicContentSize" width="44.333333333333336" height="56"/>
+        </designable>
+        <designable name="jZB-FF-RgA">
+            <size key="intrinsicContentSize" width="43.666666666666664" height="25.666666666666668"/>
+        </designable>
+        <designable name="kFt-eU-Dcl">
+            <size key="intrinsicContentSize" width="45.333333333333336" height="31.666666666666668"/>
         </designable>
         <designable name="kec-QF-RXq">
             <size key="intrinsicContentSize" width="44.333333333333336" height="56"/>
         </designable>
+        <designable name="oV9-rM-0kC">
+            <size key="intrinsicContentSize" width="50" height="44.333333333333336"/>
+        </designable>
         <designable name="onW-2d-TJn">
             <size key="intrinsicContentSize" width="60" height="56"/>
+        </designable>
+        <designable name="pSp-Ge-enj">
+            <size key="intrinsicContentSize" width="45.666666666666664" height="25.666666666666668"/>
         </designable>
         <designable name="qKA-Na-qjI">
             <size key="intrinsicContentSize" width="50" height="56"/>
         </designable>
+        <designable name="qsO-9a-wEt">
+            <size key="intrinsicContentSize" width="45" height="31.666666666666668"/>
+        </designable>
         <designable name="rOx-EF-KEf">
             <size key="intrinsicContentSize" width="44.333333333333336" height="56"/>
+        </designable>
+        <designable name="sYg-en-GbZ">
+            <size key="intrinsicContentSize" width="38.666666666666664" height="44.333333333333336"/>
         </designable>
         <designable name="vHT-lF-MBt">
             <size key="intrinsicContentSize" width="44.333333333333336" height="56"/>
         </designable>
         <designable name="wt4-jR-s9P">
             <size key="intrinsicContentSize" width="44.333333333333336" height="56"/>
+        </designable>
+        <designable name="yyj-gV-kZt">
+            <size key="intrinsicContentSize" width="38.666666666666664" height="44.333333333333336"/>
         </designable>
     </designables>
 </document>

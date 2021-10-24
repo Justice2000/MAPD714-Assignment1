@@ -40,6 +40,7 @@ class ViewController: UIViewController
     var result = ""
     var currentOperation:Operation = .NULL
     
+    
     override func viewDidLoad()
     {
         super.viewDidLoad()
@@ -158,6 +159,7 @@ class ViewController: UIViewController
                 }else if currentOperation == .Percent{
                     result = "\( (Double(leftValue)! * 0.01))"
                 }else if currentOperation == .pm{
+                    
                     result = "\(-Double(leftValue)!)"
                 }
                 leftValue = result
