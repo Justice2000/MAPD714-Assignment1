@@ -1,15 +1,15 @@
 /*
  *Program Name: Basic Calculator
- *Date Last Modified: 03/10/2021
+ *Date Last Modified: 24/10/2021
  *Description: A simple Calculator app to perform basic binary operations such ad addition, subtraction, etc. using logic.
- *Revision History: Added the Funtionalities for the various operator buttons in the calculator.
+ *Revision History: Added landscape buttons and the Funtionalities for the various operator buttons in the landscape mode.
  *Author: Justice Ekeke
  *Student ID: 301160908
- *Date: September 24, 2021
+ *Date: October 24, 2021
  *
  *Author: Shrijan Karki
  *Student ID: 301222636
- *Date: September 24, 2021
+ *Date: October 24, 2021
  *
  */
 

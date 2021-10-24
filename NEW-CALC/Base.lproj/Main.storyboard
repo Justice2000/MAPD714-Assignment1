@@ -2050,6 +2050,7 @@
                         <variation key="heightClass=regular-widthClass=compact">
                             <mask key="subviews">
                                 <exclude reference="Cyg-DT-AcI"/>
+                                <exclude reference="IpS-wv-TaP"/>
                             </mask>
                         </variation>
                     </view>
